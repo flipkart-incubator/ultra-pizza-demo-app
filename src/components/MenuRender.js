@@ -45,9 +45,9 @@ export default class MenuRender extends React.Component {
           backgroundColor='#2876F4'/> */}
         <FlatList
           data={[
-            {key: 'Pizza', quantity: this.props.screenProps.pizza, imglocation: 'https://github.com/flipkart-incubator/ultra-pizza-demo-app/blob/master/images/pizza.jpg'},
-            {key: 'Beverages', quantity: this.props.screenProps.beverage, imglocation: 'https://github.com/flipkart-incubator/ultra-pizza-demo-app/blob/master/images/beverage.jpg'},
-            {key: 'Sides', quantity: this.props.screenProps.sides, imglocation: 'https://github.com/flipkart-incubator/ultra-pizza-demo-app/blob/master/images/sides.jpg'}
+            {key: 'Pizza', quantity: this.props.screenProps.pizza, imglocation: 'https://raw.githubusercontent.com/flipkart-incubator/ultra-pizza-demo-app/master/images/pizza.jpg'},
+            {key: 'Beverages', quantity: this.props.screenProps.beverage, imglocation: 'https://raw.githubusercontent.com/flipkart-incubator/ultra-pizza-demo-app/master/images/beverage.jpg'},
+            {key: 'Sides', quantity: this.props.screenProps.sides, imglocation: 'https://raw.githubusercontent.com/flipkart-incubator/ultra-pizza-demo-app/master/images/sides.jpg'}
           ]}
           renderItem={({item}) => <LandingListItem name= {item.key} quantity={item.quantity} 
           imglocation= {item.imglocation} dispatch= {this.props.screenProps.dispatch} navigation= {navigate}/> }/>
