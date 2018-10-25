@@ -1,13 +1,19 @@
 import React from 'react';
-import {StyleSheet, Text, View} from 'react-native';
+import {Button, StyleSheet, Text, View} from 'react-native';
 
 export default class ConfirmationScreen extends React.Component{
+
+    onButtonPress = () =>{
+        const { navigate } = this.props.navigation;
+        navigate('Orders');
+    }
 
     render(){
         return(
             <View style={{padding: 20}}>
                 <Text style={styles.textitem}>Order Confirmed.</Text>
                 <Text style={styles.textitem}>Order Id: ZHAUYF65</Text>
+                <Button title='Click to view your orders' onPress={this.onButtonPress}/>
             </View>
         );
     }

@@ -1,7 +1,6 @@
 import React from 'react';
 import {Button, Image, StyleSheet, Text, TouchableHighlight, View} from 'react-native';
 import { connect } from 'react-redux';
-// import { incrementPizza } from './../sagas'
 
 export default class LandingListItem extends React.Component {
     
@@ -11,27 +10,13 @@ export default class LandingListItem extends React.Component {
             quantity: 0
         };
     }
-    // _onPressButton = () =>{
-    //     this.props.navigation('SelectQty', {name: this.props.name});
-    //   }
 
     _onIncrement = () =>{
-        //console.log('dispatch type in landing lsit item');
-        //incrementPizza();
         this.props.dispatch({type: 'INCREMENT', item: this.props.name});
-        //action({type: INCREMENT, item:'pizza'});
-        // this.setState({
-        //     quantity: this.state.quantity+1
-        // })
     }
 
     _onDecrement = () =>{
         this.props.dispatch({type: 'DECREMENT', item: this.props.name});
-        // if(this.state.quantity >= 1){
-        //     this.setState({
-        //         quantity: this.state.quantity-1
-        //     })
-        // }
     }
 
     render () {

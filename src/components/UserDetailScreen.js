@@ -1,12 +1,14 @@
 import React from 'react';
 import {Button, StyleSheet, Text, TextInput, ToastAndroid, View} from 'react-native';
+import FKPlatform from "fk-platform-sdk"
+let fkPlatform = new FKPlatform('playground.pizza');
+var getUser = require('../server/getUserDetails');
 
 export default class UserDetailScreen extends React.Component{
 
     constructor(props){
         super(props);
         this.state = {name: '', phone: '', address: ''};
-        //(this.state.screentype);
     }
 
     onButtonPress = () => {
@@ -20,14 +22,27 @@ export default class UserDetailScreen extends React.Component{
     }
 
     canProceed = () => {
-        if(this.state.name == '' || this.state.phone == '' || this.state.address == ''){
-            return false;
-        }else{
-            return true;
-        }
+        return true;
+        // if(this.state.name == '' || this.state.phone == '' || this.state.address == ''){
+        //     return false;
+        // }else{
+        //     return true;
+        // }
     }
 
     render(){
+        var scopeReq = [{"scope":"user.mobile","isMandatory":false,"shouldVerify":false},{"scope":"user.name","isMandatory":false,"shouldVerify":false}];
+        fkPlatform.getModuleHelper().getPermissionsModule().getToken(scopeReq).then(
+        function (e) {
+            console.log("Your grant token is: " + e.grantToken);
+            var request = {
+                token: e.grantToken
+            }
+            var user = getUser.getUserDetails(request, null);
+        }).catch(
+        function (e) {
+            console.log(e.message);
+        })
         return(
             <View style={{padding: 20}}>
                 <Text style={styles.textitem}>User Details</Text>

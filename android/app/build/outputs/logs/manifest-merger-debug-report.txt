@@ -1,0 +1,498 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/manbendra.s/Documents/Source-code/ultra-pizza-demo-app/android/app/src/main/AndroidManifest.xml:2:1-34:12
+INJECTED from /Users/manbendra.s/Documents/Source-code/ultra-pizza-demo-app/android/app/src/main/AndroidManifest.xml:2:1-34:12
+INJECTED from /Users/manbendra.s/Documents/Source-code/ultra-pizza-demo-app/android/app/src/main/AndroidManifest.xml:2:1-34:12
+INJECTED from /Users/manbendra.s/Documents/Source-code/ultra-pizza-demo-app/android/app/src/main/AndroidManifest.xml:2:1-34:12
+MERGED from [com.facebook.react:react-native:0.55.4] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/react-native-0.55.4.aar/d30a7569b8317bb1c3a46f69f1090be9/AndroidManifest.xml:2:1-15:12
+MERGED from [com.firebaseui:firebase-ui-auth:4.1.0] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/firebase-ui-auth-4.1.0.aar/71c2656c2d46448b4764ed9a80c70d75/AndroidManifest.xml:2:1-114:12
+MERGED from [com.google.firebase:firebase-auth:16.0.3] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.0.3.aar/3a2faf061e29ca74b4c879a3c65e663b/AndroidManifest.xml:17:1-38:12
+MERGED from [com.android.support:design:27.1.1] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/design-27.1.1.aar/a896a9e47aa2cd8311246c41e15f26cc/AndroidManifest.xml:17:1-22:12
+MERGED from [me.zhanghai.android.materialprogressbar:library:1.4.2] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/library-1.4.2.aar/6933ecea4b609193d14d48f62873f9a3/AndroidManifest.xml:6:1-16:12
+MERGED from [com.android.support:appcompat-v7:27.1.1] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/b17ccda4829a95c5dbe89f23434b3f91/AndroidManifest.xml:17:1-22:12
+MERGED from [com.facebook.fbui.textlayoutbuilder:textlayoutbuilder:1.0.0] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/textlayoutbuilder-1.0.0.aar/e0af3eebe02359ae823d5e643468de74/AndroidManifest.xml:10:1-18:12
+MERGED from [com.facebook.fresco:fresco:1.3.0] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/fresco-1.3.0.aar/6841e469da5d5762015bd4c7f4d3eda0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.3.0] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/imagepipeline-okhttp3-1.3.0.aar/a9f89aec36e6059eb14483e3dece9bb5/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.soloader:soloader:0.1.0] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/soloader-0.1.0.aar/c7630cb15fdd4b662b99f100a8aaf39b/AndroidManifest.xml:1:1-4:12
+MERGED from [org.webkit:android-jsc:r174650] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/android-jsc-r174650.aar/e34d9568554a118eca3f786c840a9af8/AndroidManifest.xml:1:1-3:12
+MERGED from [com.google.android.gms:play-services-auth:15.0.1] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/play-services-auth-15.0.1.aar/6d31d13749e1815306cd4d8024449a7b/AndroidManifest.xml:17:1-39:12
+MERGED from [com.google.android.gms:play-services-auth-api-phone:15.0.1] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/play-services-auth-api-phone-15.0.1.aar/78f5f3518c8e346c08efff0c3972b683/AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.android.gms:play-services-auth-base:15.0.1] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/play-services-auth-base-15.0.1.aar/4e804b2cccd9af5c12b4078d1320eb5f/AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.android.gms:play-services-flags:15.0.1] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/play-services-flags-15.0.1.aar/674b4e26497ade7739e29a3c5b236d3a/AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.firebase:firebase-auth-interop:16.0.0] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/firebase-auth-interop-16.0.0.aar/dfc4881c8ea1b035bdd57a68eee8d4c7/AndroidManifest.xml:2:1-10:12
+MERGED from [com.google.android.gms:play-services-base:15.0.1] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/8fb5196567d4a9f3ae4485d0ba41cb70/AndroidManifest.xml:17:1-29:12
+MERGED from [com.google.firebase:firebase-common:16.0.0] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/firebase-common-16.0.0.aar/82e563735cea9c211f32661456667223/AndroidManifest.xml:2:1-16:12
+MERGED from [com.google.android.gms:play-services-tasks:15.0.1] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/play-services-tasks-15.0.1.aar/572ecf926194677ff3bb330e0659316c/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-basement:15.0.1] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/b47715925c1c1616a35153ee52fcc405/AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:customtabs:27.1.1] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/customtabs-27.1.1.aar/50bf3260a90fca4126fbef0c061967fd/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support.constraint:constraint-layout:1.1.2] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.2.aar/448e1d4f77760ef0b2e14f2fd8d44f58/AndroidManifest.xml:2:1-11:12
+MERGED from [android.arch.lifecycle:extensions:1.1.1] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/extensions-1.1.1.aar/78966ff74328e80b598cce0c171e9f4f/AndroidManifest.xml:17:1-30:12
+MERGED from [com.android.support:cardview-v7:27.1.1] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/cardview-v7-27.1.1.aar/2ea18394aab06ee1234971130e59f4f8/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-v4:27.1.1] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/support-v4-27.1.1.aar/447f3c0fd5b980ff8b31b6b07bc95862/AndroidManifest.xml:17:1-22:12
+MERGED from [com.facebook.fresco:drawee:1.3.0] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/drawee-1.3.0.aar/2456b60ebf130b5ff4cf368b2276bf7e/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline:1.3.0] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/imagepipeline-1.3.0.aar/f75cdaf2acaa78d2d8d81de85720620d/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:imagepipeline-base:1.3.0] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/imagepipeline-base-1.3.0.aar/fefddf8523c0113b8c9bc8ebc0c9f065/AndroidManifest.xml:2:1-9:12
+MERGED from [com.facebook.fresco:fbcore:1.3.0] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/fbcore-1.3.0.aar/9c911e67957f1355fd894eeb60f91e63/AndroidManifest.xml:2:1-9:12
+MERGED from [com.android.support:recyclerview-v7:27.1.1] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-27.1.1.aar/a38cf8a1509be9e7e05b9b60b365724b/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:transition:27.1.1] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/transition-27.1.1.aar/ae473035197d7a2459375e6e58265ca9/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-media-compat:27.1.1] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.1.aar/65c1d78ced276ff6543ffeef3909beb9/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/98e9e7bad92360c9a1e91feaa4f19ac0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:27.1.1] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/b44fca0fbef1b02d7780ceb6081ea7b4/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-fragment:27.1.1] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/b2bd792ef770d5f291d300e9a96e502b/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:27.1.1] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/a123b3c0efac1ccd4ee302c7faea1932/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:27.1.1] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/c67103d9cddd319f1743a20edd918be3/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:27.1.1] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/9c8faf4a8973441e856ebac97f076d53/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/f97af725171343b0ab8e19b31ac62971/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/9e4539ee144970bbab68e199750eb96b/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.1] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/3ee2864aabfb02342f6d21e8f18c6d6d/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/59a5c37c11454d4c9e642e5b9159edef/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/96f966e032fd4aa8ea24ace987fccd1f/AndroidManifest.xml:17:1-22:12
+INJECTED from /Users/manbendra.s/Documents/Source-code/ultra-pizza-demo-app/android/app/src/main/AndroidManifest.xml:2:1-34:12
+INJECTED from /Users/manbendra.s/Documents/Source-code/ultra-pizza-demo-app/android/app/src/main/AndroidManifest.xml:2:1-34:12
+INJECTED from /Users/manbendra.s/Documents/Source-code/ultra-pizza-demo-app/android/app/src/main/AndroidManifest.xml:2:1-34:12
+	package
+		ADDED from /Users/manbendra.s/Documents/Source-code/ultra-pizza-demo-app/android/app/src/main/AndroidManifest.xml:3:5-32
+		INJECTED from /Users/manbendra.s/Documents/Source-code/ultra-pizza-demo-app/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/manbendra.s/Documents/Source-code/ultra-pizza-demo-app/android/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/manbendra.s/Documents/Source-code/ultra-pizza-demo-app/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/manbendra.s/Documents/Source-code/ultra-pizza-demo-app/android/app/src/main/AndroidManifest.xml:2:1-34:12
+		INJECTED from /Users/manbendra.s/Documents/Source-code/ultra-pizza-demo-app/android/app/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /Users/manbendra.s/Documents/Source-code/ultra-pizza-demo-app/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/manbendra.s/Documents/Source-code/ultra-pizza-demo-app/android/app/src/main/AndroidManifest.xml:2:1-34:12
+		INJECTED from /Users/manbendra.s/Documents/Source-code/ultra-pizza-demo-app/android/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/manbendra.s/Documents/Source-code/ultra-pizza-demo-app/android/app/src/main/AndroidManifest.xml:2:11-69
+uses-permission#android.permission.INTERNET
+ADDED from /Users/manbendra.s/Documents/Source-code/ultra-pizza-demo-app/android/app/src/main/AndroidManifest.xml:5:5-67
+MERGED from [com.firebaseui:firebase-ui-auth:4.1.0] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/firebase-ui-auth-4.1.0.aar/71c2656c2d46448b4764ed9a80c70d75/AndroidManifest.xml:13:5-67
+MERGED from [com.firebaseui:firebase-ui-auth:4.1.0] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/firebase-ui-auth-4.1.0.aar/71c2656c2d46448b4764ed9a80c70d75/AndroidManifest.xml:13:5-67
+	android:name
+		ADDED from /Users/manbendra.s/Documents/Source-code/ultra-pizza-demo-app/android/app/src/main/AndroidManifest.xml:5:22-64
+uses-permission#android.permission.SYSTEM_ALERT_WINDOW
+ADDED from /Users/manbendra.s/Documents/Source-code/ultra-pizza-demo-app/android/app/src/main/AndroidManifest.xml:6:5-78
+MERGED from [com.facebook.react:react-native:0.55.4] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/react-native-0.55.4.aar/d30a7569b8317bb1c3a46f69f1090be9/AndroidManifest.xml:11:5-78
+MERGED from [com.facebook.react:react-native:0.55.4] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/react-native-0.55.4.aar/d30a7569b8317bb1c3a46f69f1090be9/AndroidManifest.xml:11:5-78
+	android:name
+		ADDED from /Users/manbendra.s/Documents/Source-code/ultra-pizza-demo-app/android/app/src/main/AndroidManifest.xml:6:22-75
+application
+ADDED from /Users/manbendra.s/Documents/Source-code/ultra-pizza-demo-app/android/app/src/main/AndroidManifest.xml:8:5-32:19
+MERGED from [com.facebook.react:react-native:0.55.4] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/react-native-0.55.4.aar/d30a7569b8317bb1c3a46f69f1090be9/AndroidManifest.xml:13:5-20
+MERGED from [com.facebook.react:react-native:0.55.4] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/react-native-0.55.4.aar/d30a7569b8317bb1c3a46f69f1090be9/AndroidManifest.xml:13:5-20
+MERGED from [com.firebaseui:firebase-ui-auth:4.1.0] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/firebase-ui-auth-4.1.0.aar/71c2656c2d46448b4764ed9a80c70d75/AndroidManifest.xml:15:5-112:19
+MERGED from [com.firebaseui:firebase-ui-auth:4.1.0] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/firebase-ui-auth-4.1.0.aar/71c2656c2d46448b4764ed9a80c70d75/AndroidManifest.xml:15:5-112:19
+MERGED from [com.google.firebase:firebase-auth:16.0.3] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.0.3.aar/3a2faf061e29ca74b4c879a3c65e663b/AndroidManifest.xml:22:5-36:19
+MERGED from [com.google.firebase:firebase-auth:16.0.3] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.0.3.aar/3a2faf061e29ca74b4c879a3c65e663b/AndroidManifest.xml:22:5-36:19
+MERGED from [com.facebook.soloader:soloader:0.1.0] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/soloader-0.1.0.aar/c7630cb15fdd4b662b99f100a8aaf39b/AndroidManifest.xml:3:3-17
+MERGED from [com.facebook.soloader:soloader:0.1.0] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/soloader-0.1.0.aar/c7630cb15fdd4b662b99f100a8aaf39b/AndroidManifest.xml:3:3-17
+MERGED from [org.webkit:android-jsc:r174650] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/android-jsc-r174650.aar/e34d9568554a118eca3f786c840a9af8/AndroidManifest.xml:2:3-17
+MERGED from [org.webkit:android-jsc:r174650] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/android-jsc-r174650.aar/e34d9568554a118eca3f786c840a9af8/AndroidManifest.xml:2:3-17
+MERGED from [com.google.android.gms:play-services-auth:15.0.1] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/play-services-auth-15.0.1.aar/6d31d13749e1815306cd4d8024449a7b/AndroidManifest.xml:22:5-37:19
+MERGED from [com.google.android.gms:play-services-auth:15.0.1] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/play-services-auth-15.0.1.aar/6d31d13749e1815306cd4d8024449a7b/AndroidManifest.xml:22:5-37:19
+MERGED from [com.google.firebase:firebase-auth-interop:16.0.0] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/firebase-auth-interop-16.0.0.aar/dfc4881c8ea1b035bdd57a68eee8d4c7/AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.firebase:firebase-auth-interop:16.0.0] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/firebase-auth-interop-16.0.0.aar/dfc4881c8ea1b035bdd57a68eee8d4c7/AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.android.gms:play-services-base:15.0.1] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/8fb5196567d4a9f3ae4485d0ba41cb70/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-base:15.0.1] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/8fb5196567d4a9f3ae4485d0ba41cb70/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.firebase:firebase-common:16.0.0] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/firebase-common-16.0.0.aar/82e563735cea9c211f32661456667223/AndroidManifest.xml:8:5-14:19
+MERGED from [com.google.firebase:firebase-common:16.0.0] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/firebase-common-16.0.0.aar/82e563735cea9c211f32661456667223/AndroidManifest.xml:8:5-14:19
+MERGED from [com.google.android.gms:play-services-tasks:15.0.1] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/play-services-tasks-15.0.1.aar/572ecf926194677ff3bb330e0659316c/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-tasks:15.0.1] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/play-services-tasks-15.0.1.aar/572ecf926194677ff3bb330e0659316c/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-basement:15.0.1] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/b47715925c1c1616a35153ee52fcc405/AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-basement:15.0.1] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/b47715925c1c1616a35153ee52fcc405/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support.constraint:constraint-layout:1.1.2] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.2.aar/448e1d4f77760ef0b2e14f2fd8d44f58/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.2] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.2.aar/448e1d4f77760ef0b2e14f2fd8d44f58/AndroidManifest.xml:9:5-20
+MERGED from [android.arch.lifecycle:extensions:1.1.1] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/extensions-1.1.1.aar/78966ff74328e80b598cce0c171e9f4f/AndroidManifest.xml:22:5-28:19
+MERGED from [android.arch.lifecycle:extensions:1.1.1] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/extensions-1.1.1.aar/78966ff74328e80b598cce0c171e9f4f/AndroidManifest.xml:22:5-28:19
+	android:label
+		ADDED from /Users/manbendra.s/Documents/Source-code/ultra-pizza-demo-app/android/app/src/main/AndroidManifest.xml:12:9-41
+	android:icon
+		ADDED from /Users/manbendra.s/Documents/Source-code/ultra-pizza-demo-app/android/app/src/main/AndroidManifest.xml:11:9-43
+	android:allowBackup
+		ADDED from /Users/manbendra.s/Documents/Source-code/ultra-pizza-demo-app/android/app/src/main/AndroidManifest.xml:10:9-36
+	android:theme
+		ADDED from /Users/manbendra.s/Documents/Source-code/ultra-pizza-demo-app/android/app/src/main/AndroidManifest.xml:13:9-40
+	android:name
+		ADDED from /Users/manbendra.s/Documents/Source-code/ultra-pizza-demo-app/android/app/src/main/AndroidManifest.xml:9:9-40
+activity#com.pizzadelivery.MainActivity
+ADDED from /Users/manbendra.s/Documents/Source-code/ultra-pizza-demo-app/android/app/src/main/AndroidManifest.xml:14:9-20:20
+	android:label
+		ADDED from /Users/manbendra.s/Documents/Source-code/ultra-pizza-demo-app/android/app/src/main/AndroidManifest.xml:17:13-45
+	android:windowSoftInputMode
+		ADDED from /Users/manbendra.s/Documents/Source-code/ultra-pizza-demo-app/android/app/src/main/AndroidManifest.xml:18:13-55
+	android:configChanges
+		ADDED from /Users/manbendra.s/Documents/Source-code/ultra-pizza-demo-app/android/app/src/main/AndroidManifest.xml:16:13-83
+	android:name
+		ADDED from /Users/manbendra.s/Documents/Source-code/ultra-pizza-demo-app/android/app/src/main/AndroidManifest.xml:15:13-41
+activity#com.pizzadelivery.LoginActivity
+ADDED from /Users/manbendra.s/Documents/Source-code/ultra-pizza-demo-app/android/app/src/main/AndroidManifest.xml:21:9-30:20
+	android:label
+		ADDED from /Users/manbendra.s/Documents/Source-code/ultra-pizza-demo-app/android/app/src/main/AndroidManifest.xml:23:13-57
+	android:theme
+		ADDED from /Users/manbendra.s/Documents/Source-code/ultra-pizza-demo-app/android/app/src/main/AndroidManifest.xml:24:13-44
+	android:name
+		ADDED from /Users/manbendra.s/Documents/Source-code/ultra-pizza-demo-app/android/app/src/main/AndroidManifest.xml:22:13-42
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/manbendra.s/Documents/Source-code/ultra-pizza-demo-app/android/app/src/main/AndroidManifest.xml:25:13-29:29
+action#android.intent.action.MAIN
+ADDED from /Users/manbendra.s/Documents/Source-code/ultra-pizza-demo-app/android/app/src/main/AndroidManifest.xml:26:17-69
+	android:name
+		ADDED from /Users/manbendra.s/Documents/Source-code/ultra-pizza-demo-app/android/app/src/main/AndroidManifest.xml:26:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/manbendra.s/Documents/Source-code/ultra-pizza-demo-app/android/app/src/main/AndroidManifest.xml:28:17-77
+	android:name
+		ADDED from /Users/manbendra.s/Documents/Source-code/ultra-pizza-demo-app/android/app/src/main/AndroidManifest.xml:28:27-74
+activity#com.facebook.react.devsupport.DevSettingsActivity
+ADDED from /Users/manbendra.s/Documents/Source-code/ultra-pizza-demo-app/android/app/src/main/AndroidManifest.xml:31:9-86
+	android:name
+		ADDED from /Users/manbendra.s/Documents/Source-code/ultra-pizza-demo-app/android/app/src/main/AndroidManifest.xml:31:19-83
+uses-sdk
+INJECTED from /Users/manbendra.s/Documents/Source-code/ultra-pizza-demo-app/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/manbendra.s/Documents/Source-code/ultra-pizza-demo-app/android/app/src/main/AndroidManifest.xml
+INJECTED from /Users/manbendra.s/Documents/Source-code/ultra-pizza-demo-app/android/app/src/main/AndroidManifest.xml
+MERGED from [com.facebook.react:react-native:0.55.4] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/react-native-0.55.4.aar/d30a7569b8317bb1c3a46f69f1090be9/AndroidManifest.xml:7:5-9:41
+MERGED from [com.facebook.react:react-native:0.55.4] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/react-native-0.55.4.aar/d30a7569b8317bb1c3a46f69f1090be9/AndroidManifest.xml:7:5-9:41
+MERGED from [com.firebaseui:firebase-ui-auth:4.1.0] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/firebase-ui-auth-4.1.0.aar/71c2656c2d46448b4764ed9a80c70d75/AndroidManifest.xml:8:5-10:41
+MERGED from [com.firebaseui:firebase-ui-auth:4.1.0] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/firebase-ui-auth-4.1.0.aar/71c2656c2d46448b4764ed9a80c70d75/AndroidManifest.xml:8:5-10:41
+MERGED from [com.google.firebase:firebase-auth:16.0.3] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.0.3.aar/3a2faf061e29ca74b4c879a3c65e663b/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-auth:16.0.3] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.0.3.aar/3a2faf061e29ca74b4c879a3c65e663b/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design:27.1.1] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/design-27.1.1.aar/a896a9e47aa2cd8311246c41e15f26cc/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design:27.1.1] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/design-27.1.1.aar/a896a9e47aa2cd8311246c41e15f26cc/AndroidManifest.xml:20:5-44
+MERGED from [me.zhanghai.android.materialprogressbar:library:1.4.2] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/library-1.4.2.aar/6933ecea4b609193d14d48f62873f9a3/AndroidManifest.xml:12:5-14:41
+MERGED from [me.zhanghai.android.materialprogressbar:library:1.4.2] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/library-1.4.2.aar/6933ecea4b609193d14d48f62873f9a3/AndroidManifest.xml:12:5-14:41
+MERGED from [com.android.support:appcompat-v7:27.1.1] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/b17ccda4829a95c5dbe89f23434b3f91/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.1.1] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/b17ccda4829a95c5dbe89f23434b3f91/AndroidManifest.xml:20:5-44
+MERGED from [com.facebook.fbui.textlayoutbuilder:textlayoutbuilder:1.0.0] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/textlayoutbuilder-1.0.0.aar/e0af3eebe02359ae823d5e643468de74/AndroidManifest.xml:14:5-16:41
+MERGED from [com.facebook.fbui.textlayoutbuilder:textlayoutbuilder:1.0.0] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/textlayoutbuilder-1.0.0.aar/e0af3eebe02359ae823d5e643468de74/AndroidManifest.xml:14:5-16:41
+MERGED from [com.facebook.fresco:fresco:1.3.0] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/fresco-1.3.0.aar/6841e469da5d5762015bd4c7f4d3eda0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fresco:1.3.0] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/fresco-1.3.0.aar/6841e469da5d5762015bd4c7f4d3eda0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.3.0] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/imagepipeline-okhttp3-1.3.0.aar/a9f89aec36e6059eb14483e3dece9bb5/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-okhttp3:1.3.0] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/imagepipeline-okhttp3-1.3.0.aar/a9f89aec36e6059eb14483e3dece9bb5/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.soloader:soloader:0.1.0] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/soloader-0.1.0.aar/c7630cb15fdd4b662b99f100a8aaf39b/AndroidManifest.xml:2:3-70
+MERGED from [com.facebook.soloader:soloader:0.1.0] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/soloader-0.1.0.aar/c7630cb15fdd4b662b99f100a8aaf39b/AndroidManifest.xml:2:3-70
+MERGED from [com.google.android.gms:play-services-auth:15.0.1] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/play-services-auth-15.0.1.aar/6d31d13749e1815306cd4d8024449a7b/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-auth:15.0.1] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/play-services-auth-15.0.1.aar/6d31d13749e1815306cd4d8024449a7b/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-auth-api-phone:15.0.1] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/play-services-auth-api-phone-15.0.1.aar/78f5f3518c8e346c08efff0c3972b683/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-auth-api-phone:15.0.1] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/play-services-auth-api-phone-15.0.1.aar/78f5f3518c8e346c08efff0c3972b683/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-auth-base:15.0.1] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/play-services-auth-base-15.0.1.aar/4e804b2cccd9af5c12b4078d1320eb5f/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-auth-base:15.0.1] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/play-services-auth-base-15.0.1.aar/4e804b2cccd9af5c12b4078d1320eb5f/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-flags:15.0.1] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/play-services-flags-15.0.1.aar/674b4e26497ade7739e29a3c5b236d3a/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-flags:15.0.1] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/play-services-flags-15.0.1.aar/674b4e26497ade7739e29a3c5b236d3a/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-auth-interop:16.0.0] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/firebase-auth-interop-16.0.0.aar/dfc4881c8ea1b035bdd57a68eee8d4c7/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-auth-interop:16.0.0] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/firebase-auth-interop-16.0.0.aar/dfc4881c8ea1b035bdd57a68eee8d4c7/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-base:15.0.1] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/8fb5196567d4a9f3ae4485d0ba41cb70/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:15.0.1] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/8fb5196567d4a9f3ae4485d0ba41cb70/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-common:16.0.0] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/firebase-common-16.0.0.aar/82e563735cea9c211f32661456667223/AndroidManifest.xml:5:5-6:37
+MERGED from [com.google.firebase:firebase-common:16.0.0] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/firebase-common-16.0.0.aar/82e563735cea9c211f32661456667223/AndroidManifest.xml:5:5-6:37
+MERGED from [com.google.android.gms:play-services-tasks:15.0.1] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/play-services-tasks-15.0.1.aar/572ecf926194677ff3bb330e0659316c/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-tasks:15.0.1] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/play-services-tasks-15.0.1.aar/572ecf926194677ff3bb330e0659316c/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-basement:15.0.1] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/b47715925c1c1616a35153ee52fcc405/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:15.0.1] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/b47715925c1c1616a35153ee52fcc405/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customtabs:27.1.1] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/customtabs-27.1.1.aar/50bf3260a90fca4126fbef0c061967fd/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customtabs:27.1.1] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/customtabs-27.1.1.aar/50bf3260a90fca4126fbef0c061967fd/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support.constraint:constraint-layout:1.1.2] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.2.aar/448e1d4f77760ef0b2e14f2fd8d44f58/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.2] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.2.aar/448e1d4f77760ef0b2e14f2fd8d44f58/AndroidManifest.xml:5:5-7:41
+MERGED from [android.arch.lifecycle:extensions:1.1.1] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/extensions-1.1.1.aar/78966ff74328e80b598cce0c171e9f4f/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:extensions:1.1.1] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/extensions-1.1.1.aar/78966ff74328e80b598cce0c171e9f4f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:27.1.1] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/cardview-v7-27.1.1.aar/2ea18394aab06ee1234971130e59f4f8/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:27.1.1] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/cardview-v7-27.1.1.aar/2ea18394aab06ee1234971130e59f4f8/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:27.1.1] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/support-v4-27.1.1.aar/447f3c0fd5b980ff8b31b6b07bc95862/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:27.1.1] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/support-v4-27.1.1.aar/447f3c0fd5b980ff8b31b6b07bc95862/AndroidManifest.xml:20:5-44
+MERGED from [com.facebook.fresco:drawee:1.3.0] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/drawee-1.3.0.aar/2456b60ebf130b5ff4cf368b2276bf7e/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:drawee:1.3.0] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/drawee-1.3.0.aar/2456b60ebf130b5ff4cf368b2276bf7e/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:1.3.0] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/imagepipeline-1.3.0.aar/f75cdaf2acaa78d2d8d81de85720620d/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline:1.3.0] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/imagepipeline-1.3.0.aar/f75cdaf2acaa78d2d8d81de85720620d/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-base:1.3.0] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/imagepipeline-base-1.3.0.aar/fefddf8523c0113b8c9bc8ebc0c9f065/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:imagepipeline-base:1.3.0] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/imagepipeline-base-1.3.0.aar/fefddf8523c0113b8c9bc8ebc0c9f065/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fbcore:1.3.0] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/fbcore-1.3.0.aar/9c911e67957f1355fd894eeb60f91e63/AndroidManifest.xml:5:5-7:41
+MERGED from [com.facebook.fresco:fbcore:1.3.0] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/fbcore-1.3.0.aar/9c911e67957f1355fd894eeb60f91e63/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:recyclerview-v7:27.1.1] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-27.1.1.aar/a38cf8a1509be9e7e05b9b60b365724b/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:27.1.1] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-27.1.1.aar/a38cf8a1509be9e7e05b9b60b365724b/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:27.1.1] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/transition-27.1.1.aar/ae473035197d7a2459375e6e58265ca9/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:27.1.1] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/transition-27.1.1.aar/ae473035197d7a2459375e6e58265ca9/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:27.1.1] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.1.aar/65c1d78ced276ff6543ffeef3909beb9/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:27.1.1] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.1.aar/65c1d78ced276ff6543ffeef3909beb9/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/98e9e7bad92360c9a1e91feaa4f19ac0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/98e9e7bad92360c9a1e91feaa4f19ac0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/b44fca0fbef1b02d7780ceb6081ea7b4/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/b44fca0fbef1b02d7780ceb6081ea7b4/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.1] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/b2bd792ef770d5f291d300e9a96e502b/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.1] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/b2bd792ef770d5f291d300e9a96e502b/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/a123b3c0efac1ccd4ee302c7faea1932/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/a123b3c0efac1ccd4ee302c7faea1932/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/c67103d9cddd319f1743a20edd918be3/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/c67103d9cddd319f1743a20edd918be3/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/9c8faf4a8973441e856ebac97f076d53/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/9c8faf4a8973441e856ebac97f076d53/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/f97af725171343b0ab8e19b31ac62971/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/f97af725171343b0ab8e19b31ac62971/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/9e4539ee144970bbab68e199750eb96b/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/9e4539ee144970bbab68e199750eb96b/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/3ee2864aabfb02342f6d21e8f18c6d6d/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/3ee2864aabfb02342f6d21e8f18c6d6d/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/59a5c37c11454d4c9e642e5b9159edef/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/59a5c37c11454d4c9e642e5b9159edef/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/96f966e032fd4aa8ea24ace987fccd1f/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/96f966e032fd4aa8ea24ace987fccd1f/AndroidManifest.xml:20:5-44
+INJECTED from /Users/manbendra.s/Documents/Source-code/ultra-pizza-demo-app/android/app/src/main/AndroidManifest.xml
+INJECTED from /Users/manbendra.s/Documents/Source-code/ultra-pizza-demo-app/android/app/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/manbendra.s/Documents/Source-code/ultra-pizza-demo-app/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/manbendra.s/Documents/Source-code/ultra-pizza-demo-app/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/manbendra.s/Documents/Source-code/ultra-pizza-demo-app/android/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/manbendra.s/Documents/Source-code/ultra-pizza-demo-app/android/app/src/main/AndroidManifest.xml
+		ADDED from /Users/manbendra.s/Documents/Source-code/ultra-pizza-demo-app/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/manbendra.s/Documents/Source-code/ultra-pizza-demo-app/android/app/src/main/AndroidManifest.xml
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from [com.firebaseui:firebase-ui-auth:4.1.0] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/firebase-ui-auth-4.1.0.aar/71c2656c2d46448b4764ed9a80c70d75/AndroidManifest.xml:12:5-79
+	android:name
+		ADDED from [com.firebaseui:firebase-ui-auth:4.1.0] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/firebase-ui-auth-4.1.0.aar/71c2656c2d46448b4764ed9a80c70d75/AndroidManifest.xml:12:22-76
+meta-data#com.google.android.gms.version
+ADDED from [com.firebaseui:firebase-ui-auth:4.1.0] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/firebase-ui-auth-4.1.0.aar/71c2656c2d46448b4764ed9a80c70d75/AndroidManifest.xml:16:9-18:69
+MERGED from [com.google.android.gms:play-services-basement:15.0.1] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/b47715925c1c1616a35153ee52fcc405/AndroidManifest.xml:23:9-25:69
+MERGED from [com.google.android.gms:play-services-basement:15.0.1] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/play-services-basement-15.0.1.aar/b47715925c1c1616a35153ee52fcc405/AndroidManifest.xml:23:9-25:69
+	android:value
+		ADDED from [com.firebaseui:firebase-ui-auth:4.1.0] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/firebase-ui-auth-4.1.0.aar/71c2656c2d46448b4764ed9a80c70d75/AndroidManifest.xml:18:13-66
+	android:name
+		ADDED from [com.firebaseui:firebase-ui-auth:4.1.0] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/firebase-ui-auth-4.1.0.aar/71c2656c2d46448b4764ed9a80c70d75/AndroidManifest.xml:17:13-58
+meta-data#com.facebook.sdk.ApplicationId
+ADDED from [com.firebaseui:firebase-ui-auth:4.1.0] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/firebase-ui-auth-4.1.0.aar/71c2656c2d46448b4764ed9a80c70d75/AndroidManifest.xml:19:9-21:63
+	android:value
+		ADDED from [com.firebaseui:firebase-ui-auth:4.1.0] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/firebase-ui-auth-4.1.0.aar/71c2656c2d46448b4764ed9a80c70d75/AndroidManifest.xml:21:13-60
+	android:name
+		ADDED from [com.firebaseui:firebase-ui-auth:4.1.0] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/firebase-ui-auth-4.1.0.aar/71c2656c2d46448b4764ed9a80c70d75/AndroidManifest.xml:20:13-58
+activity#com.firebase.ui.auth.KickoffActivity
+ADDED from [com.firebaseui:firebase-ui-auth:4.1.0] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/firebase-ui-auth-4.1.0.aar/71c2656c2d46448b4764ed9a80c70d75/AndroidManifest.xml:23:9-27:61
+	android:label
+		ADDED from [com.firebaseui:firebase-ui-auth:4.1.0] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/firebase-ui-auth-4.1.0.aar/71c2656c2d46448b4764ed9a80c70d75/AndroidManifest.xml:26:13-29
+	android:exported
+		ADDED from [com.firebaseui:firebase-ui-auth:4.1.0] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/firebase-ui-auth-4.1.0.aar/71c2656c2d46448b4764ed9a80c70d75/AndroidManifest.xml:25:13-37
+	android:theme
+		ADDED from [com.firebaseui:firebase-ui-auth:4.1.0] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/firebase-ui-auth-4.1.0.aar/71c2656c2d46448b4764ed9a80c70d75/AndroidManifest.xml:27:13-58
+	android:name
+		ADDED from [com.firebaseui:firebase-ui-auth:4.1.0] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/firebase-ui-auth-4.1.0.aar/71c2656c2d46448b4764ed9a80c70d75/AndroidManifest.xml:24:13-64
+activity#com.firebase.ui.auth.ui.idp.SingleSignInActivity
+ADDED from [com.firebaseui:firebase-ui-auth:4.1.0] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/firebase-ui-auth-4.1.0.aar/71c2656c2d46448b4764ed9a80c70d75/AndroidManifest.xml:28:9-32:61
+	android:label
+		ADDED from [com.firebaseui:firebase-ui-auth:4.1.0] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/firebase-ui-auth-4.1.0.aar/71c2656c2d46448b4764ed9a80c70d75/AndroidManifest.xml:31:13-29
+	android:exported
+		ADDED from [com.firebaseui:firebase-ui-auth:4.1.0] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/firebase-ui-auth-4.1.0.aar/71c2656c2d46448b4764ed9a80c70d75/AndroidManifest.xml:30:13-37
+	android:theme
+		ADDED from [com.firebaseui:firebase-ui-auth:4.1.0] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/firebase-ui-auth-4.1.0.aar/71c2656c2d46448b4764ed9a80c70d75/AndroidManifest.xml:32:13-58
+	android:name
+		ADDED from [com.firebaseui:firebase-ui-auth:4.1.0] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/firebase-ui-auth-4.1.0.aar/71c2656c2d46448b4764ed9a80c70d75/AndroidManifest.xml:29:13-76
+activity#com.firebase.ui.auth.ui.credentials.CredentialSaveActivity
+ADDED from [com.firebaseui:firebase-ui-auth:4.1.0] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/firebase-ui-auth-4.1.0.aar/71c2656c2d46448b4764ed9a80c70d75/AndroidManifest.xml:33:9-37:61
+	android:label
+		ADDED from [com.firebaseui:firebase-ui-auth:4.1.0] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/firebase-ui-auth-4.1.0.aar/71c2656c2d46448b4764ed9a80c70d75/AndroidManifest.xml:36:13-29
+	android:exported
+		ADDED from [com.firebaseui:firebase-ui-auth:4.1.0] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/firebase-ui-auth-4.1.0.aar/71c2656c2d46448b4764ed9a80c70d75/AndroidManifest.xml:35:13-37
+	android:theme
+		ADDED from [com.firebaseui:firebase-ui-auth:4.1.0] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/firebase-ui-auth-4.1.0.aar/71c2656c2d46448b4764ed9a80c70d75/AndroidManifest.xml:37:13-58
+	android:name
+		ADDED from [com.firebaseui:firebase-ui-auth:4.1.0] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/firebase-ui-auth-4.1.0.aar/71c2656c2d46448b4764ed9a80c70d75/AndroidManifest.xml:34:13-86
+activity#com.firebase.ui.auth.ui.provider.GitHubLoginActivity
+ADDED from [com.firebaseui:firebase-ui-auth:4.1.0] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/firebase-ui-auth-4.1.0.aar/71c2656c2d46448b4764ed9a80c70d75/AndroidManifest.xml:38:9-58:20
+	android:label
+		ADDED from [com.firebaseui:firebase-ui-auth:4.1.0] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/firebase-ui-auth-4.1.0.aar/71c2656c2d46448b4764ed9a80c70d75/AndroidManifest.xml:41:13-29
+	android:launchMode
+		ADDED from [com.firebaseui:firebase-ui-auth:4.1.0] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/firebase-ui-auth-4.1.0.aar/71c2656c2d46448b4764ed9a80c70d75/AndroidManifest.xml:42:13-43
+	android:configChanges
+		ADDED from [com.firebaseui:firebase-ui-auth:4.1.0] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/firebase-ui-auth-4.1.0.aar/71c2656c2d46448b4764ed9a80c70d75/AndroidManifest.xml:40:13-96
+	android:theme
+		ADDED from [com.firebaseui:firebase-ui-auth:4.1.0] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/firebase-ui-auth-4.1.0.aar/71c2656c2d46448b4764ed9a80c70d75/AndroidManifest.xml:43:13-58
+	android:name
+		ADDED from [com.firebaseui:firebase-ui-auth:4.1.0] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/firebase-ui-auth-4.1.0.aar/71c2656c2d46448b4764ed9a80c70d75/AndroidManifest.xml:39:13-80
+intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:host:@string/firebase_web_host+data:path:/__/auth/handler+data:scheme:https
+ADDED from [com.firebaseui:firebase-ui-auth:4.1.0] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/firebase-ui-auth-4.1.0.aar/71c2656c2d46448b4764ed9a80c70d75/AndroidManifest.xml:44:13-57:29
+	tools:ignore
+		ADDED from [com.firebaseui:firebase-ui-auth:4.1.0] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/firebase-ui-auth-4.1.0.aar/71c2656c2d46448b4764ed9a80c70d75/AndroidManifest.xml:46:17-47
+	android:autoVerify
+		ADDED from [com.firebaseui:firebase-ui-auth:4.1.0] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/firebase-ui-auth-4.1.0.aar/71c2656c2d46448b4764ed9a80c70d75/AndroidManifest.xml:45:17-42
+action#android.intent.action.VIEW
+ADDED from [com.firebaseui:firebase-ui-auth:4.1.0] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/firebase-ui-auth-4.1.0.aar/71c2656c2d46448b4764ed9a80c70d75/AndroidManifest.xml:47:17-69
+	android:name
+		ADDED from [com.firebaseui:firebase-ui-auth:4.1.0] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/firebase-ui-auth-4.1.0.aar/71c2656c2d46448b4764ed9a80c70d75/AndroidManifest.xml:47:25-66
+category#android.intent.category.DEFAULT
+ADDED from [com.firebaseui:firebase-ui-auth:4.1.0] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/firebase-ui-auth-4.1.0.aar/71c2656c2d46448b4764ed9a80c70d75/AndroidManifest.xml:49:17-76
+	android:name
+		ADDED from [com.firebaseui:firebase-ui-auth:4.1.0] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/firebase-ui-auth-4.1.0.aar/71c2656c2d46448b4764ed9a80c70d75/AndroidManifest.xml:49:27-73
+category#android.intent.category.BROWSABLE
+ADDED from [com.firebaseui:firebase-ui-auth:4.1.0] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/firebase-ui-auth-4.1.0.aar/71c2656c2d46448b4764ed9a80c70d75/AndroidManifest.xml:50:17-78
+	android:name
+		ADDED from [com.firebaseui:firebase-ui-auth:4.1.0] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/firebase-ui-auth-4.1.0.aar/71c2656c2d46448b4764ed9a80c70d75/AndroidManifest.xml:50:27-75
+data
+ADDED from [com.firebaseui:firebase-ui-auth:4.1.0] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/firebase-ui-auth-4.1.0.aar/71c2656c2d46448b4764ed9a80c70d75/AndroidManifest.xml:52:17-56:64
+	android:path
+		ADDED from [com.firebaseui:firebase-ui-auth:4.1.0] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/firebase-ui-auth-4.1.0.aar/71c2656c2d46448b4764ed9a80c70d75/AndroidManifest.xml:54:21-52
+	android:host
+		ADDED from [com.firebaseui:firebase-ui-auth:4.1.0] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/firebase-ui-auth-4.1.0.aar/71c2656c2d46448b4764ed9a80c70d75/AndroidManifest.xml:53:21-61
+	android:scheme
+		ADDED from [com.firebaseui:firebase-ui-auth:4.1.0] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/firebase-ui-auth-4.1.0.aar/71c2656c2d46448b4764ed9a80c70d75/AndroidManifest.xml:55:21-43
+	tools:ignore
+		ADDED from [com.firebaseui:firebase-ui-auth:4.1.0] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/firebase-ui-auth-4.1.0.aar/71c2656c2d46448b4764ed9a80c70d75/AndroidManifest.xml:56:21-61
+activity#com.firebase.ui.auth.ui.email.RecoverPasswordActivity
+ADDED from [com.firebaseui:firebase-ui-auth:4.1.0] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/firebase-ui-auth-4.1.0.aar/71c2656c2d46448b4764ed9a80c70d75/AndroidManifest.xml:59:9-63:58
+	android:label
+		ADDED from [com.firebaseui:firebase-ui-auth:4.1.0] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/firebase-ui-auth-4.1.0.aar/71c2656c2d46448b4764ed9a80c70d75/AndroidManifest.xml:62:13-72
+	android:windowSoftInputMode
+		ADDED from [com.firebaseui:firebase-ui-auth:4.1.0] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/firebase-ui-auth-4.1.0.aar/71c2656c2d46448b4764ed9a80c70d75/AndroidManifest.xml:63:13-55
+	android:exported
+		ADDED from [com.firebaseui:firebase-ui-auth:4.1.0] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/firebase-ui-auth-4.1.0.aar/71c2656c2d46448b4764ed9a80c70d75/AndroidManifest.xml:61:13-37
+	android:name
+		ADDED from [com.firebaseui:firebase-ui-auth:4.1.0] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/firebase-ui-auth-4.1.0.aar/71c2656c2d46448b4764ed9a80c70d75/AndroidManifest.xml:60:13-81
+activity#com.firebase.ui.auth.ui.email.EmailActivity
+ADDED from [com.firebaseui:firebase-ui-auth:4.1.0] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/firebase-ui-auth-4.1.0.aar/71c2656c2d46448b4764ed9a80c70d75/AndroidManifest.xml:64:9-68:58
+	android:label
+		ADDED from [com.firebaseui:firebase-ui-auth:4.1.0] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/firebase-ui-auth-4.1.0.aar/71c2656c2d46448b4764ed9a80c70d75/AndroidManifest.xml:67:13-56
+	android:windowSoftInputMode
+		ADDED from [com.firebaseui:firebase-ui-auth:4.1.0] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/firebase-ui-auth-4.1.0.aar/71c2656c2d46448b4764ed9a80c70d75/AndroidManifest.xml:68:13-55
+	android:exported
+		ADDED from [com.firebaseui:firebase-ui-auth:4.1.0] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/firebase-ui-auth-4.1.0.aar/71c2656c2d46448b4764ed9a80c70d75/AndroidManifest.xml:66:13-37
+	android:name
+		ADDED from [com.firebaseui:firebase-ui-auth:4.1.0] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/firebase-ui-auth-4.1.0.aar/71c2656c2d46448b4764ed9a80c70d75/AndroidManifest.xml:65:13-71
+activity#com.firebase.ui.auth.ui.phone.PhoneActivity
+ADDED from [com.firebaseui:firebase-ui-auth:4.1.0] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/firebase-ui-auth-4.1.0.aar/71c2656c2d46448b4764ed9a80c70d75/AndroidManifest.xml:69:9-73:77
+	android:label
+		ADDED from [com.firebaseui:firebase-ui-auth:4.1.0] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/firebase-ui-auth-4.1.0.aar/71c2656c2d46448b4764ed9a80c70d75/AndroidManifest.xml:72:13-66
+	android:windowSoftInputMode
+		ADDED from [com.firebaseui:firebase-ui-auth:4.1.0] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/firebase-ui-auth-4.1.0.aar/71c2656c2d46448b4764ed9a80c70d75/AndroidManifest.xml:73:13-74
+	android:exported
+		ADDED from [com.firebaseui:firebase-ui-auth:4.1.0] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/firebase-ui-auth-4.1.0.aar/71c2656c2d46448b4764ed9a80c70d75/AndroidManifest.xml:71:13-37
+	android:name
+		ADDED from [com.firebaseui:firebase-ui-auth:4.1.0] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/firebase-ui-auth-4.1.0.aar/71c2656c2d46448b4764ed9a80c70d75/AndroidManifest.xml:70:13-71
+activity#com.firebase.ui.auth.ui.idp.WelcomeBackIdpPrompt
+ADDED from [com.firebaseui:firebase-ui-auth:4.1.0] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/firebase-ui-auth-4.1.0.aar/71c2656c2d46448b4764ed9a80c70d75/AndroidManifest.xml:74:9-78:58
+	android:label
+		ADDED from [com.firebaseui:firebase-ui-auth:4.1.0] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/firebase-ui-auth-4.1.0.aar/71c2656c2d46448b4764ed9a80c70d75/AndroidManifest.xml:77:13-70
+	android:windowSoftInputMode
+		ADDED from [com.firebaseui:firebase-ui-auth:4.1.0] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/firebase-ui-auth-4.1.0.aar/71c2656c2d46448b4764ed9a80c70d75/AndroidManifest.xml:78:13-55
+	android:exported
+		ADDED from [com.firebaseui:firebase-ui-auth:4.1.0] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/firebase-ui-auth-4.1.0.aar/71c2656c2d46448b4764ed9a80c70d75/AndroidManifest.xml:76:13-37
+	android:name
+		ADDED from [com.firebaseui:firebase-ui-auth:4.1.0] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/firebase-ui-auth-4.1.0.aar/71c2656c2d46448b4764ed9a80c70d75/AndroidManifest.xml:75:13-76
+activity#com.firebase.ui.auth.ui.email.WelcomeBackPasswordPrompt
+ADDED from [com.firebaseui:firebase-ui-auth:4.1.0] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/firebase-ui-auth-4.1.0.aar/71c2656c2d46448b4764ed9a80c70d75/AndroidManifest.xml:79:9-83:58
+	android:label
+		ADDED from [com.firebaseui:firebase-ui-auth:4.1.0] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/firebase-ui-auth-4.1.0.aar/71c2656c2d46448b4764ed9a80c70d75/AndroidManifest.xml:82:13-75
+	android:windowSoftInputMode
+		ADDED from [com.firebaseui:firebase-ui-auth:4.1.0] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/firebase-ui-auth-4.1.0.aar/71c2656c2d46448b4764ed9a80c70d75/AndroidManifest.xml:83:13-55
+	android:exported
+		ADDED from [com.firebaseui:firebase-ui-auth:4.1.0] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/firebase-ui-auth-4.1.0.aar/71c2656c2d46448b4764ed9a80c70d75/AndroidManifest.xml:81:13-37
+	android:name
+		ADDED from [com.firebaseui:firebase-ui-auth:4.1.0] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/firebase-ui-auth-4.1.0.aar/71c2656c2d46448b4764ed9a80c70d75/AndroidManifest.xml:80:13-83
+activity#com.firebase.ui.auth.ui.idp.AuthMethodPickerActivity
+ADDED from [com.firebaseui:firebase-ui-auth:4.1.0] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/firebase-ui-auth-4.1.0.aar/71c2656c2d46448b4764ed9a80c70d75/AndroidManifest.xml:84:9-87:65
+	android:label
+		ADDED from [com.firebaseui:firebase-ui-auth:4.1.0] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/firebase-ui-auth-4.1.0.aar/71c2656c2d46448b4764ed9a80c70d75/AndroidManifest.xml:87:13-62
+	android:exported
+		ADDED from [com.firebaseui:firebase-ui-auth:4.1.0] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/firebase-ui-auth-4.1.0.aar/71c2656c2d46448b4764ed9a80c70d75/AndroidManifest.xml:86:13-37
+	android:name
+		ADDED from [com.firebaseui:firebase-ui-auth:4.1.0] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/firebase-ui-auth-4.1.0.aar/71c2656c2d46448b4764ed9a80c70d75/AndroidManifest.xml:85:13-80
+activity#com.facebook.FacebookActivity
+ADDED from [com.firebaseui:firebase-ui-auth:4.1.0] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/firebase-ui-auth-4.1.0.aar/71c2656c2d46448b4764ed9a80c70d75/AndroidManifest.xml:88:9-92:48
+	android:label
+		ADDED from [com.firebaseui:firebase-ui-auth:4.1.0] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/firebase-ui-auth-4.1.0.aar/71c2656c2d46448b4764ed9a80c70d75/AndroidManifest.xml:91:13-45
+	tools:ignore
+		ADDED from [com.firebaseui:firebase-ui-auth:4.1.0] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/firebase-ui-auth-4.1.0.aar/71c2656c2d46448b4764ed9a80c70d75/AndroidManifest.xml:92:13-45
+	android:configChanges
+		ADDED from [com.firebaseui:firebase-ui-auth:4.1.0] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/firebase-ui-auth-4.1.0.aar/71c2656c2d46448b4764ed9a80c70d75/AndroidManifest.xml:90:13-96
+	android:name
+		ADDED from [com.firebaseui:firebase-ui-auth:4.1.0] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/firebase-ui-auth-4.1.0.aar/71c2656c2d46448b4764ed9a80c70d75/AndroidManifest.xml:89:13-57
+activity#com.facebook.CustomTabActivity
+ADDED from [com.firebaseui:firebase-ui-auth:4.1.0] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/firebase-ui-auth-4.1.0.aar/71c2656c2d46448b4764ed9a80c70d75/AndroidManifest.xml:93:9-105:20
+	android:exported
+		ADDED from [com.firebaseui:firebase-ui-auth:4.1.0] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/firebase-ui-auth-4.1.0.aar/71c2656c2d46448b4764ed9a80c70d75/AndroidManifest.xml:95:13-36
+	tools:ignore
+		ADDED from [com.firebaseui:firebase-ui-auth:4.1.0] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/firebase-ui-auth-4.1.0.aar/71c2656c2d46448b4764ed9a80c70d75/AndroidManifest.xml:96:13-45
+	android:name
+		ADDED from [com.firebaseui:firebase-ui-auth:4.1.0] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/firebase-ui-auth-4.1.0.aar/71c2656c2d46448b4764ed9a80c70d75/AndroidManifest.xml:94:13-58
+intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:scheme:@string/facebook_login_protocol_scheme
+ADDED from [com.firebaseui:firebase-ui-auth:4.1.0] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/firebase-ui-auth-4.1.0.aar/71c2656c2d46448b4764ed9a80c70d75/AndroidManifest.xml:97:13-104:29
+provider#com.firebase.ui.auth.data.client.AuthUiInitProvider
+ADDED from [com.firebaseui:firebase-ui-auth:4.1.0] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/firebase-ui-auth-4.1.0.aar/71c2656c2d46448b4764ed9a80c70d75/AndroidManifest.xml:107:9-111:38
+	android:authorities
+		ADDED from [com.firebaseui:firebase-ui-auth:4.1.0] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/firebase-ui-auth-4.1.0.aar/71c2656c2d46448b4764ed9a80c70d75/AndroidManifest.xml:109:13-70
+	android:exported
+		ADDED from [com.firebaseui:firebase-ui-auth:4.1.0] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/firebase-ui-auth-4.1.0.aar/71c2656c2d46448b4764ed9a80c70d75/AndroidManifest.xml:110:13-37
+	android:initOrder
+		ADDED from [com.firebaseui:firebase-ui-auth:4.1.0] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/firebase-ui-auth-4.1.0.aar/71c2656c2d46448b4764ed9a80c70d75/AndroidManifest.xml:111:13-35
+	android:name
+		ADDED from [com.firebaseui:firebase-ui-auth:4.1.0] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/firebase-ui-auth-4.1.0.aar/71c2656c2d46448b4764ed9a80c70d75/AndroidManifest.xml:108:13-79
+activity#com.google.firebase.auth.internal.FederatedSignInActivity
+ADDED from [com.google.firebase:firebase-auth:16.0.3] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.0.3.aar/3a2faf061e29ca74b4c879a3c65e663b/AndroidManifest.xml:23:9-29:75
+	android:excludeFromRecents
+		ADDED from [com.google.firebase:firebase-auth:16.0.3] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.0.3.aar/3a2faf061e29ca74b4c879a3c65e663b/AndroidManifest.xml:25:13-46
+	android:launchMode
+		ADDED from [com.google.firebase:firebase-auth:16.0.3] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.0.3.aar/3a2faf061e29ca74b4c879a3c65e663b/AndroidManifest.xml:27:13-48
+	android:exported
+		ADDED from [com.google.firebase:firebase-auth:16.0.3] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.0.3.aar/3a2faf061e29ca74b4c879a3c65e663b/AndroidManifest.xml:26:13-36
+	android:permission
+		ADDED from [com.google.firebase:firebase-auth:16.0.3] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.0.3.aar/3a2faf061e29ca74b4c879a3c65e663b/AndroidManifest.xml:28:13-102
+	android:theme
+		ADDED from [com.google.firebase:firebase-auth:16.0.3] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.0.3.aar/3a2faf061e29ca74b4c879a3c65e663b/AndroidManifest.xml:29:13-72
+	android:name
+		ADDED from [com.google.firebase:firebase-auth:16.0.3] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.0.3.aar/3a2faf061e29ca74b4c879a3c65e663b/AndroidManifest.xml:24:13-85
+service#com.google.firebase.components.ComponentDiscoveryService
+ADDED from [com.google.firebase:firebase-auth:16.0.3] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.0.3.aar/3a2faf061e29ca74b4c879a3c65e663b/AndroidManifest.xml:31:9-35:19
+	android:name
+		ADDED from [com.google.firebase:firebase-auth:16.0.3] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.0.3.aar/3a2faf061e29ca74b4c879a3c65e663b/AndroidManifest.xml:31:18-89
+meta-data#com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar
+ADDED from [com.google.firebase:firebase-auth:16.0.3] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.0.3.aar/3a2faf061e29ca74b4c879a3c65e663b/AndroidManifest.xml:32:13-34:85
+	android:value
+		ADDED from [com.google.firebase:firebase-auth:16.0.3] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.0.3.aar/3a2faf061e29ca74b4c879a3c65e663b/AndroidManifest.xml:34:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-auth:16.0.3] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/firebase-auth-16.0.3.aar/3a2faf061e29ca74b4c879a3c65e663b/AndroidManifest.xml:33:17-109
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+IMPLIED from /Users/manbendra.s/Documents/Source-code/ultra-pizza-demo-app/android/app/src/main/AndroidManifest.xml:2:1-34:12 reason: org.webkit.android_jsc has a targetSdkVersion < 4
+uses-permission#android.permission.READ_PHONE_STATE
+IMPLIED from /Users/manbendra.s/Documents/Source-code/ultra-pizza-demo-app/android/app/src/main/AndroidManifest.xml:2:1-34:12 reason: org.webkit.android_jsc has a targetSdkVersion < 4
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+IMPLIED from /Users/manbendra.s/Documents/Source-code/ultra-pizza-demo-app/android/app/src/main/AndroidManifest.xml:2:1-34:12 reason: org.webkit.android_jsc requested WRITE_EXTERNAL_STORAGE
+activity#com.google.android.gms.auth.api.signin.internal.SignInHubActivity
+ADDED from [com.google.android.gms:play-services-auth:15.0.1] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/play-services-auth-15.0.1.aar/6d31d13749e1815306cd4d8024449a7b/AndroidManifest.xml:23:9-27:75
+	android:excludeFromRecents
+		ADDED from [com.google.android.gms:play-services-auth:15.0.1] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/play-services-auth-15.0.1.aar/6d31d13749e1815306cd4d8024449a7b/AndroidManifest.xml:25:13-46
+	android:exported
+		ADDED from [com.google.android.gms:play-services-auth:15.0.1] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/play-services-auth-15.0.1.aar/6d31d13749e1815306cd4d8024449a7b/AndroidManifest.xml:26:13-37
+	android:theme
+		ADDED from [com.google.android.gms:play-services-auth:15.0.1] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/play-services-auth-15.0.1.aar/6d31d13749e1815306cd4d8024449a7b/AndroidManifest.xml:27:13-72
+	android:name
+		ADDED from [com.google.android.gms:play-services-auth:15.0.1] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/play-services-auth-15.0.1.aar/6d31d13749e1815306cd4d8024449a7b/AndroidManifest.xml:24:13-93
+service#com.google.android.gms.auth.api.signin.RevocationBoundService
+ADDED from [com.google.android.gms:play-services-auth:15.0.1] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/play-services-auth-15.0.1.aar/6d31d13749e1815306cd4d8024449a7b/AndroidManifest.xml:33:9-36:110
+	android:exported
+		ADDED from [com.google.android.gms:play-services-auth:15.0.1] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/play-services-auth-15.0.1.aar/6d31d13749e1815306cd4d8024449a7b/AndroidManifest.xml:35:13-36
+	android:permission
+		ADDED from [com.google.android.gms:play-services-auth:15.0.1] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/play-services-auth-15.0.1.aar/6d31d13749e1815306cd4d8024449a7b/AndroidManifest.xml:36:13-107
+	android:name
+		ADDED from [com.google.android.gms:play-services-auth:15.0.1] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/play-services-auth-15.0.1.aar/6d31d13749e1815306cd4d8024449a7b/AndroidManifest.xml:34:13-89
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:15.0.1] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/8fb5196567d4a9f3ae4485d0ba41cb70/AndroidManifest.xml:23:9-26:75
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:15.0.1] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/8fb5196567d4a9f3ae4485d0ba41cb70/AndroidManifest.xml:25:13-37
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:15.0.1] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/8fb5196567d4a9f3ae4485d0ba41cb70/AndroidManifest.xml:26:13-72
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:15.0.1] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/play-services-base-15.0.1.aar/8fb5196567d4a9f3ae4485d0ba41cb70/AndroidManifest.xml:24:13-79
+provider#com.google.firebase.provider.FirebaseInitProvider
+ADDED from [com.google.firebase:firebase-common:16.0.0] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/firebase-common-16.0.0.aar/82e563735cea9c211f32661456667223/AndroidManifest.xml:9:9-13:39
+	android:authorities
+		ADDED from [com.google.firebase:firebase-common:16.0.0] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/firebase-common-16.0.0.aar/82e563735cea9c211f32661456667223/AndroidManifest.xml:11:13-72
+	android:exported
+		ADDED from [com.google.firebase:firebase-common:16.0.0] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/firebase-common-16.0.0.aar/82e563735cea9c211f32661456667223/AndroidManifest.xml:12:13-37
+	android:initOrder
+		ADDED from [com.google.firebase:firebase-common:16.0.0] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/firebase-common-16.0.0.aar/82e563735cea9c211f32661456667223/AndroidManifest.xml:13:13-36
+	android:name
+		ADDED from [com.google.firebase:firebase-common:16.0.0] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/firebase-common-16.0.0.aar/82e563735cea9c211f32661456667223/AndroidManifest.xml:10:13-77
+provider#android.arch.lifecycle.ProcessLifecycleOwnerInitializer
+ADDED from [android.arch.lifecycle:extensions:1.1.1] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/extensions-1.1.1.aar/78966ff74328e80b598cce0c171e9f4f/AndroidManifest.xml:23:9-27:43
+	android:authorities
+		ADDED from [android.arch.lifecycle:extensions:1.1.1] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/extensions-1.1.1.aar/78966ff74328e80b598cce0c171e9f4f/AndroidManifest.xml:25:13-68
+	android:multiprocess
+		ADDED from [android.arch.lifecycle:extensions:1.1.1] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/extensions-1.1.1.aar/78966ff74328e80b598cce0c171e9f4f/AndroidManifest.xml:27:13-40
+	android:exported
+		ADDED from [android.arch.lifecycle:extensions:1.1.1] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/extensions-1.1.1.aar/78966ff74328e80b598cce0c171e9f4f/AndroidManifest.xml:26:13-37
+	android:name
+		ADDED from [android.arch.lifecycle:extensions:1.1.1] /Users/manbendra.s/.gradle/caches/transforms-1/files-1.1/extensions-1.1.1.aar/78966ff74328e80b598cce0c171e9f4f/AndroidManifest.xml:24:13-83
