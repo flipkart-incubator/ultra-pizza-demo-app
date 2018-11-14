@@ -16,7 +16,7 @@ import java.util.List;
 
 public class MainApplication extends Application implements ReactApplication {
 
-    private String ipAddress = "172.29.196.55:8085";
+    private String ipAddress = "192.168.0.3:8085";
 
   private final ReactNativeHost mReactNativeHost = new ReactNativeHost(this) {
     @Override
@@ -46,9 +46,9 @@ public class MainApplication extends Application implements ReactApplication {
   public void onCreate() {
     super.onCreate();
     FirebaseApp.initializeApp(this);
-      SharedPreferences preferences =
-              PreferenceManager.getDefaultSharedPreferences(this.getApplicationContext());
-      preferences.edit().putString("debug_http_host", ipAddress).apply();
+    SharedPreferences preferences =
+            PreferenceManager.getDefaultSharedPreferences(this.getApplicationContext());
+    preferences.edit().putString("debug_http_host", ipAddress).apply();
     SoLoader.init(this, /* native exopackage */ false);
   }
 }

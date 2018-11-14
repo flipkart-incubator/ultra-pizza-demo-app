@@ -1,20 +1,27 @@
 import React from 'react';
-import {Button, FlatList, SafeAreaView, ToastAndroid, View} from 'react-native';
-import ActionBar from 'react-native-action-bar';
-import GlobalStyles from './GlobalStyles';
+import {Button, DeviceEventEmitter, FlatList, ToastAndroid, View} from 'react-native';
 import LandingListItem from './LandingListItem';
 
-
+//This component displays Main Food Menu screen of the app
 export default class MenuRender extends React.Component {
 
-  constructor(props) {
-    super(props)
+  constructor(props){
+    super(props);
+
+    const onSessionConnect = (event) => {
+      if(event.loadUri === 'my_orders'){
+        const { navigate } = this.props.navigation;
+        navigate('Orders');
+      }
+    };
+    //registering Device Events Listener to handle user calls to My orders from Menu icon
+    DeviceEventEmitter.addListener('loadUri', onSessionConnect);
   }
 
   onProceed = () =>{
     if(this.canProceed()){
       const { navigate } = this.props.navigation;
-      navigate('SelectQty');
+      navigate('ConfirmQty');
     }else{
       ToastAndroid.show('Select an item to Proceed', ToastAndroid.SHORT);
     }
@@ -34,8 +41,6 @@ export default class MenuRender extends React.Component {
 }
 
   render () {
-    //const { navigate } = this.props.navigation;
-    //console.log('dispatch type in menuRender',typeof(this.props.screenProps));
     return (
       <View>
         <FlatList
@@ -45,11 +50,12 @@ export default class MenuRender extends React.Component {
             {key: 'Sides', quantity: this.props.screenProps.sides, imglocation: 'https://raw.githubusercontent.com/flipkart-incubator/ultra-pizza-demo-app/master/images/sides.jpg'}
           ]}
           renderItem={({item}) => <LandingListItem name= {item.key} quantity={item.quantity} 
-          imglocation= {item.imglocation} dispatch= {this.props.screenProps.dispatch} /*navigation= {navigate}*//> }/>
+          imglocation= {item.imglocation} dispatch= {this.props.screenProps.dispatch}/> }/>
         <Button 
           style={{width: 50, padding: 10}}
           onPress={this.onProceed}
-                title="Proceed"/>
+              title="Proceed"/>
+        <View style={{width: 10, height: 10}}/>
         <Button title='Click to view your orders' onPress={this.onMyOrdersPress}/>
       </View>
     );

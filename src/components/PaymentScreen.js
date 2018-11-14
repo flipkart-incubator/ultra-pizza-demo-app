@@ -1,63 +1,103 @@
 import React from 'react';
-import {Button, StyleSheet, Text, View} from 'react-native';
-var firebase = require("firebase");
-//var addOrder = require('./../../../pizza-server/src/addorders');
-var add = require('../server/addorders');
+import {ActivityIndicator, Button, DeviceEventEmitter, StyleSheet, Text, View} from 'react-native';
+var addOrderInServer = require('../server/addorders');
+var payments = require('../server/Payments');
+var userDetailsScreen = require('./UserDetailScreen');
+var oms = require('../server/updateOMS.js');
+import FKPlatform from "fk-platform-sdk"
 
 require("firebase/functions");
 
+
 export default class PaymentScreen extends React.Component{
 
+    constructor(props){
+        super(props);
+        this.state = {isLoading: true};
+    }
+
     onButtonPress = () =>{
+        this.saveTransactionOnServer();
         const { navigate } = this.props.navigation;
         navigate('Confirmation');
-        this.saveTransactionOnServer();
     }
 
     saveTransactionOnServer = () =>{
-        add.addOrder(null, null);
-        //---------------use DB directly----------
-        // var config = {
-        //     apiKey: "AIzaSyBAMUXFxgwK5vks7SBQ6EDnMaYuNRIT5Yc",
-        //     authDomain: "pizzadelivery-38e91.firebaseapp.com",
-        //     databaseURL: "https://pizzadelivery-38e91.firebaseio.com/",
-        //     storageBucket: "pizzadelivery-38e91.appspot.com"
-        // };
-        // firebase.initializeApp(config);
+        var orderId = Math.floor(Math.random() * 1000000);
+        console.log('Saving order with id',orderId);
 
-        // firebase.database().ref('orders/' + 'manbendra').set({
-        //     pizza: 5,
-        //     beverage: 6,
-        //     sides : 7
-        //   });
-
-        //----------------------------------------
-
-        //-----------code to use cloud function--------------
-        // var token = this.props.screenProps.authToken;
-        // console.log("auth token passed to server", token);
-        // fetch('https://us-central1-pizzadelivery-38e91.cloudfunctions.net/addOrder',
-        //     {method: 'POST',
-        //     headers: {
-        //         'Authorization': 'Bearer ' + token,
-        //         Accept: 'application/json',
-        //         'Content-Type': 'application/json',
-        //       },
-        //     body: JSON.stringify({
-        //         mobile: this.props.screenProps.mobile,
-        //         pizza: this.props.screenProps.pizza,
-        //         beverage: this.props.screenProps.beverage,
-        //         sides: this.props.screenProps.sides
-        //     })
-        // });
-        //---------------------
+        this.props.screenProps.dispatch({type: 'UPDATE_ORDERID', orderId: orderId});
+        var identityToken;
+        if(FKPlatform.isPlatformAvailable()){
+            identityToken = this.props.screenProps.identityToken;
+        }else{
+            identityToken = '8123456789';
+        }
+        req = {
+            pizza: this.props.screenProps.pizza,
+            beverage: this.props.screenProps.beverage,
+            sides: this.props.screenProps.sides,
+            state: 'PENDING_PAYMENT',
+            orderId: orderId,
+            identityToken: identityToken
+        }
+        //Server call to save order in firebase DB.
+        addOrderInServer.addOrder(req);
     }
     
     getRandomAmount(){
         return Math.floor(Math.random() * 1000);
     }
 
+    componentDidMount(){
+        if(FKPlatform.isPlatformAvailable()){
+            //Declaring observer for payment gateway response
+            const onSessionConnect = (event) => {
+                if(event.loadUri === undefined){
+                    //ignore this event
+                }else if(event.loadUri === "/success"){
+                    this.saveTransactionOnServer();
+                    //push order to OMS
+                    oms.updateUltraOMS({
+                        orderId: this.props.screenProps.orderId
+                    });
+                    const { navigate } = this.props.navigation;
+                    navigate('Confirmation');
+                }else if(event.loadUri === "/failure"){
+                    const { navigate } = this.props.navigation;
+                    navigate('PaymentFailure');
+                }
+                
+            };
+            //registering observer for payment gateway callback
+            DeviceEventEmitter.addListener('loadUri', onSessionConnect);
+            
+            var req = {
+                amount: (this.getRandomAmount()+50)*100,
+                itemCount: this.props.screenProps.pizza + this.props.screenProps.beverage + this.props.screenProps.sides
+            }
+            //Server call to fetch payment token
+            payments.getPaymentToken(req).then((response)=> {
+                let navigationModule = userDetailsScreen.fkPlatform.getModuleHelper().getNavigationModule();
+                // Start payment using client side sdk and pass payment tpken received from server.
+                navigationModule.startPayment(response.token)
+            });
+        }else{
+            this.setState({
+                isLoading: false
+            })
+        }
+    }
+
     render(){
+        if(this.state.isLoading){
+            return(
+              <View style={{flex: 1, padding: 20}}>
+                <Text style={styles.textitem}>Transacting...</Text>
+                <ActivityIndicator/>
+              </View>
+            )
+        }
         return(
             <View style={{padding: 20}}>
                 <Text style={styles.textitem}>Dummy Payment Page</Text>

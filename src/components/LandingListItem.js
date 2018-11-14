@@ -1,6 +1,5 @@
 import React from 'react';
-import {Button, Image, StyleSheet, Text, TouchableHighlight, View} from 'react-native';
-import { connect } from 'react-redux';
+import {Button, Image, StyleSheet, Text, View} from 'react-native';
 
 export default class LandingListItem extends React.Component {
     
@@ -21,21 +20,18 @@ export default class LandingListItem extends React.Component {
 
     render () {
         return(
-            //<TouchableHighlight onPress={this._onPressButton} underlayColor="white" style={styles.container}>
-                <View style={styles.container}>
-                    <Image source={{uri: this.props.imglocation}}
-                        style={styles.imagesize}/>
-                    <Text style={styles.item}>{this.props.name}</Text>
-                    <View style={{flex: 1, flexDirection: 'row', justifyContent: 'flex-end'}}>
-                        <Button onPress={this._onIncrement}
-                            title=" + " style={styles.button}/>
-                        <Text style={styles.item}>{this.props.quantity}</Text>
-                        <Button onPress={this._onDecrement}
-                            title=" - " style={styles.button}/>
-                    </View>
+            <View style={styles.container}>
+                <Image source={{uri: this.props.imglocation}}
+                    style={styles.imagesize}/>
+                <Text style={styles.item}>{this.props.name}</Text>
+                <View style={{flex: 1, flexDirection: 'row', justifyContent: 'flex-end'}}>
+                    <Button onPress={this._onIncrement}
+                        title=" + " style={styles.button}/>
+                    <Text style={styles.item}>{this.props.quantity}</Text>
+                    <Button onPress={this._onDecrement}
+                        title=" - " style={styles.button}/>
                 </View>
-                
-            //</TouchableHighlight>
+            </View>
         );
     }
 }

@@ -1,14 +1,17 @@
 import React from 'react';
-import {Button, StyleSheet, Text, TextInput, ToastAndroid, View} from 'react-native';
+import {ActivityIndicator, Button, StyleSheet, Text, TextInput, ToastAndroid, View} from 'react-native';
+var loginHelper = require('../LoginHelper.js');
 import FKPlatform from "fk-platform-sdk"
-let fkPlatform = new FKPlatform('playground.pizza');
-var getUser = require('../server/getUserDetails');
+export let fkPlatform
+if(FKPlatform.isPlatformAvailable()){
+    fkPlatform = new FKPlatform('playground');
+}
 
 export default class UserDetailScreen extends React.Component{
 
     constructor(props){
         super(props);
-        this.state = {name: '', phone: '', address: ''};
+        this.state = {isLoading: true, name: '', phone: '', address: ''};
     }
 
     onButtonPress = () => {
@@ -18,45 +21,62 @@ export default class UserDetailScreen extends React.Component{
         }else{
             ToastAndroid.show('Enter all required fields to Proceed', ToastAndroid.SHORT);
         }
-        
     }
 
     canProceed = () => {
-        return true;
-        // if(this.state.name == '' || this.state.phone == '' || this.state.address == ''){
-        //     return false;
-        // }else{
-        //     return true;
-        // }
+        if(this.state.name == '' || this.state.phone == '' || this.state.address == ''){
+            return false;
+        }else{
+            return true;
+        }
+    }
+
+    componentDidMount(){
+        if(FKPlatform.isPlatformAvailable()){
+            console.log('Manbendra, try login');
+            loginHelper.ultraSignIn()
+            .then((userResponse) => {
+                console.log('Manbendra, got login response',userResponse);
+                this.props.screenProps.dispatch({type: 'UPDATE_IDENTITY_TOKEN', identityToken: userResponse.identityToken});
+                this.setState({
+                    isLoading: false,
+                    name: userResponse.name,
+                    phone: userResponse.mobile,
+                    address: ''
+                });
+            })
+            
+        }else{
+            this.setState({
+                isLoading: false
+            });
+        }
     }
 
     render(){
-        var scopeReq = [{"scope":"user.mobile","isMandatory":false,"shouldVerify":false},{"scope":"user.name","isMandatory":false,"shouldVerify":false}];
-        fkPlatform.getModuleHelper().getPermissionsModule().getToken(scopeReq).then(
-        function (e) {
-            console.log("Your grant token is: " + e.grantToken);
-            var request = {
-                token: e.grantToken
-            }
-            var user = getUser.getUserDetails(request, null);
-        }).catch(
-        function (e) {
-            console.log(e.message);
-        })
+        if(this.state.isLoading){
+            return(
+              <View style={{flex: 1, padding: 20}}>
+                <ActivityIndicator/>
+              </View>
+            )
+        }
         return(
             <View style={{padding: 20}}>
                 <Text style={styles.textitem}>User Details</Text>
                 <TextInput 
                     placeholder="Name *" 
                     style={styles.input}
+                    value={this.state.name}
                     underlineColorAndroid='transparent'
-                    onChangeText={(text) => this.state.name = text}/>
+                    onChangeText={(text) => this.setState({name: text})}/>
                 <TextInput 
                     placeholder="Phone Number *" 
                     style={styles.input}
                     underlineColorAndroid='transparent'
                     keyboardType={'phone-pad'}
-                    onChangeText={(text) => this.state.phone = text}/>
+                    value={this.state.phone}
+                    onChangeText={(text) => this.setState({phone: text})}/>
                 <TextInput 
                     placeholder="Address *" 
                     style={styles.input}
@@ -82,3 +102,4 @@ const styles = StyleSheet.create({
         borderWidth: 1
     }
 })
+

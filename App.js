@@ -3,13 +3,14 @@ import { createStore } from 'redux';
 import {Provider} from 'react-redux';
 import appreducer from './src/reducer';
 import AppContainer from './src/components/MainScreen';
-import DrawerNavigation from './src/components/DrawerNavigation';
 var firebase = require("firebase");
 
 const store = createStore(appreducer);
 
 export default class App extends React.Component {
+
   render() {
+    //Below firebase app config will be used later for communication with firebase database
     var config = {
       apiKey: "AIzaSyBAMUXFxgwK5vks7SBQ6EDnMaYuNRIT5Yc",
       authDomain: "pizzadelivery-38e91.firebaseapp.com",
