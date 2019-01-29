@@ -20,7 +20,7 @@ export async function getPaymentToken(req) {
                     "name": "test_mmt_flipkart",
                     "password": "a4df1221a8ba0ffcda1a2a43046a2b0bae2518f5881210bb1e2ea003fc0038fa"
                 },
-                "merchantTransactionId": "PLAYGROUND_" + Math.random().toString(36).slice(2).toUpperCase(),
+                "merchantTransactionId": req.orderId,
                 "merchantReferenceId": "PLAYGROUND_" + Math.random().toString(36).slice(2).toUpperCase(),
                 "amountPaise": req.amount,
                 "paymentExpiryMilliSeconds": 1000000,
@@ -47,6 +47,7 @@ export async function getPaymentToken(req) {
             })
         }).then( (response) => response.json())
         .then((responsejson) => {
+            console.log("payment token json response",responsejson);
             return {
                 token: responsejson.RESPONSE.token
             }

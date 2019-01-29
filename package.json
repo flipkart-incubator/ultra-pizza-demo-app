@@ -21,7 +21,7 @@
     "firebase": "^5.5.3",
     "firebase-admin": "^6.0.0",
     "firebaseui": "^3.4.1",
-    "fk-platform-sdk": "^1.0.2",
+    "fk-platform-sdk": "1.0.5",
     "install": "^0.12.1",
     "jsrsasign": "^8.0.12",
     "npm": "^6.4.1",

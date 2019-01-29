@@ -33,10 +33,8 @@ export default class UserDetailScreen extends React.Component{
 
     componentDidMount(){
         if(FKPlatform.isPlatformAvailable()){
-            console.log('Manbendra, try login');
             loginHelper.ultraSignIn()
             .then((userResponse) => {
-                console.log('Manbendra, got login response',userResponse);
                 this.props.screenProps.dispatch({type: 'UPDATE_IDENTITY_TOKEN', identityToken: userResponse.identityToken});
                 this.setState({
                     isLoading: false,

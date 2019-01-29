@@ -1,8 +1,10 @@
 import React from 'react';
-import {ActivityIndicator, FlatList, Text, View} from 'react-native';
+import {ActivityIndicator, Button, FlatList, Text, ToastAndroid, View} from 'react-native';
 import FKPlatform from "fk-platform-sdk"
 var getOrders = require('../server/getOrders.js');
 var loginHelper = require('../LoginHelper.js');
+var addorders = require('../server/addorders');
+var returnOrder = require('../server/ReturnOrder');
 
 export default class MyOrders extends React.Component {
 
@@ -30,6 +32,7 @@ export default class MyOrders extends React.Component {
             if(this.props.screenProps.identityToken === undefined){
                 loginHelper.ultraSignIn()
                 .then((user) => {
+                    this.props.screenProps.dispatch({type: 'UPDATE_IDENTITY_TOKEN', identityToken: user.identityToken});
                     this.fetchOrdersList(user.identityToken);
                 });
             }else{
@@ -62,6 +65,44 @@ export default class MyOrders extends React.Component {
         }
     }
 
+    onOrderCancel = (orderId) =>{
+        var identityToken;
+        if(FKPlatform.isPlatformAvailable()){
+            identityToken = this.props.screenProps.identityToken;
+        }else{
+            identityToken = '8123456789';
+        }
+
+        returnOrder.returnOrder(orderId).then((response)=> {
+            if(response === true) {
+                req = {
+                    orderId: orderId,
+                    identityToken: identityToken
+                }
+                addorders.returnOrder(req);
+                this.updateOrderInState(orderId);
+            }else {
+                ToastAndroid.show('Failed to cancel the order', ToastAndroid.SHORT);
+            }
+            
+        });
+    }
+
+    updateOrderInState = (orderId) => {
+        var listCopy = this.state.listData.slice();
+        for(i = 0; i < listCopy.length; i++){
+            if(listCopy[i].orderId == orderId){
+                listCopy[i].state = 'REFUNDED';
+                break;
+            }
+        }
+        //To re render screen with updated orders list
+        this.setState({
+            isLoading: false,
+            listData: listCopy
+        });
+    }
+
     render () {
         if(this.state.isLoading){
             return(
@@ -74,12 +115,18 @@ export default class MyOrders extends React.Component {
         return (
             <FlatList
                 data={this.state.listData}
-                renderItem={({item}) => <View style={{flexDirection: 'column', padding: 10}}>
-                    <Text>Pizza, {item.pizza}</Text>
-                    <Text>Beverage, {item.beverage}</Text>
-                    <Text>Sides, {item.sides}</Text>
+                renderItem={({item}) => <View style={{flexDirection: 'row', padding: 10, flex: 1, justifyContent: 'space-between'}}>
+                    <View style={{flexDirection: 'column', padding: 10}}>
+                        <Text>Pizza, {item.pizza}</Text>
+                        <Text>Beverage, {item.beverage}</Text>
+                        <Text>Sides, {item.sides}</Text>
+                    </View>
+                    <View style={{flexDirection: 'column', justifyContent: 'center'}}>
+                        { item.state === 'REFUNDED' && <Text>Cancelled</Text>}
+                        { item.state === 'PAID' && <Button onPress={() => this.onOrderCancel(item.orderId)} title="Cancel Order"/>}
+                    </View>
                 </View>
-            }
+                }
             />
         );
     }

@@ -23,10 +23,8 @@ export default class PaymentScreen extends React.Component{
     }
 
     saveTransactionOnServer = () =>{
-        var orderId = Math.floor(Math.random() * 1000000);
-        console.log('Saving order with id',orderId);
+        var orderId = this.props.screenProps.orderId;
 
-        this.props.screenProps.dispatch({type: 'UPDATE_ORDERID', orderId: orderId});
         var identityToken;
         if(FKPlatform.isPlatformAvailable()){
             identityToken = this.props.screenProps.identityToken;
@@ -37,9 +35,9 @@ export default class PaymentScreen extends React.Component{
             pizza: this.props.screenProps.pizza,
             beverage: this.props.screenProps.beverage,
             sides: this.props.screenProps.sides,
-            state: 'PENDING_PAYMENT',
             orderId: orderId,
-            identityToken: identityToken
+            identityToken: identityToken,
+            state: 'PAID'
         }
         //Server call to save order in firebase DB.
         addOrderInServer.addOrder(req);
@@ -49,7 +47,14 @@ export default class PaymentScreen extends React.Component{
         return Math.floor(Math.random() * 1000);
     }
 
+    generateOrderId = () => {
+        var orderId = "PLAYGROUND_" + Math.random().toString(36).slice(2).toUpperCase();
+        this.props.screenProps.dispatch({type: 'UPDATE_ORDERID', orderId: orderId});
+        return orderId;
+    }
+
     componentDidMount(){
+        const orderId = this.generateOrderId();
         if(FKPlatform.isPlatformAvailable()){
             //Declaring observer for payment gateway response
             const onSessionConnect = (event) => {
@@ -73,6 +78,7 @@ export default class PaymentScreen extends React.Component{
             DeviceEventEmitter.addListener('loadUri', onSessionConnect);
             
             var req = {
+                orderId: orderId,
                 amount: (this.getRandomAmount()+50)*100,
                 itemCount: this.props.screenProps.pizza + this.props.screenProps.beverage + this.props.screenProps.sides
             }
