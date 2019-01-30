@@ -5,6 +5,7 @@ var getOrders = require('../server/getOrders.js');
 var loginHelper = require('../LoginHelper.js');
 var addorders = require('../server/addorders');
 var returnOrder = require('../server/ReturnOrder');
+var oms = require('../server/updateOMS.js');
 
 export default class MyOrders extends React.Component {
 
@@ -81,6 +82,9 @@ export default class MyOrders extends React.Component {
                 }
                 addorders.returnOrder(req);
                 this.updateOrderInState(orderId);
+                oms.updateOMSAfterRefund({
+                    orderId: orderId
+                });
             }else {
                 ToastAndroid.show('Failed to cancel the order', ToastAndroid.SHORT);
             }
