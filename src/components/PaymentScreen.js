@@ -43,8 +43,8 @@ export default class PaymentScreen extends React.Component{
         addOrderInServer.addOrder(req);
     }
     
-    getRandomAmount(){
-        return Math.floor(Math.random() * 1000);
+    getAmount(){
+        return this.props.screenProps.pizza*3 + this.props.screenProps.beverage + this.props.screenProps.sides*2;
     }
 
     generateOrderId = () => {
@@ -64,7 +64,10 @@ export default class PaymentScreen extends React.Component{
                     this.saveTransactionOnServer();
                     //push order to OMS
                     oms.updateUltraOMS({
-                        orderId: this.props.screenProps.orderId
+                        orderId: this.props.screenProps.orderId,
+                        pizza: this.props.screenProps.pizza,
+                        beverage: this.props.screenProps.beverage,
+                        sides: this.props.screenProps.sides
                     });
                     const { navigate } = this.props.navigation;
                     navigate('Confirmation');
@@ -79,7 +82,7 @@ export default class PaymentScreen extends React.Component{
             
             var req = {
                 orderId: orderId,
-                amount: (this.getRandomAmount()+50)*100,
+                amount: this.getAmount()*100+50,
                 itemCount: this.props.screenProps.pizza + this.props.screenProps.beverage + this.props.screenProps.sides
             }
             //Server call to fetch payment token
@@ -107,7 +110,7 @@ export default class PaymentScreen extends React.Component{
         return(
             <View style={{padding: 20}}>
                 <Text style={styles.textitem}>Dummy Payment Page</Text>
-                <Text style={styles.amount}>Amount Rs {this.getRandomAmount()}</Text>
+                <Text style={styles.amount}>Amount Rs {this.getAmount()}</Text>
                 <Button title='PAY' onPress={this.onButtonPress}/>
             </View>
         );

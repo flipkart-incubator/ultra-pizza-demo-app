@@ -2,6 +2,9 @@
 
 # expo
 .expo/
+.git
+android/.gradle
+package-lock.json
 
 # dependencies
 /node_modules

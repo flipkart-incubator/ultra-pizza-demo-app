@@ -66,7 +66,7 @@ export default class MyOrders extends React.Component {
         }
     }
 
-    onOrderCancel = (orderId) =>{
+    onOrderCancel = (orderId, pizza, beverage, sides) =>{
         var identityToken;
         if(FKPlatform.isPlatformAvailable()){
             identityToken = this.props.screenProps.identityToken;
@@ -74,7 +74,13 @@ export default class MyOrders extends React.Component {
             identityToken = '8123456789';
         }
 
-        returnOrder.returnOrder(orderId).then((response)=> {
+        refundreq = {
+            orderId: orderId,
+            pizza: pizza,
+            beverage: beverage,
+            sides: sides
+        }
+        returnOrder.returnOrder(refundreq).then((response)=> {
             if(response === true) {
                 req = {
                     orderId: orderId,
@@ -83,7 +89,10 @@ export default class MyOrders extends React.Component {
                 addorders.returnOrder(req);
                 this.updateOrderInState(orderId);
                 oms.updateOMSAfterRefund({
-                    orderId: orderId
+                    orderId: orderId,
+                    pizza: pizza,
+                    beverage: beverage,
+                    sides: sides
                 });
             }else {
                 ToastAndroid.show('Failed to cancel the order', ToastAndroid.SHORT);
@@ -127,7 +136,7 @@ export default class MyOrders extends React.Component {
                     </View>
                     <View style={{flexDirection: 'column', justifyContent: 'center'}}>
                         { item.state === 'REFUNDED' && <Text>Cancelled</Text>}
-                        { item.state === 'PAID' && <Button onPress={() => this.onOrderCancel(item.orderId)} title="Cancel Order"/>}
+                        { item.state === 'PAID' && <Button onPress={() => this.onOrderCancel(item.orderId, item.pizza, item.beverage, item.sides)} title="Cancel Order"/>}
                     </View>
                 </View>
                 }

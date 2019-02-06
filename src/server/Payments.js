@@ -33,13 +33,13 @@ export async function getPaymentToken(req) {
                 "description": "this is a test transaction",
                 "metadata": "this is a test transaction",
                 "priceSummary": {
-                    "basePricePaise": req.amount-5000,
+                    "basePricePaise": req.amount-50,
                     "itemCount": req.itemCount,
                     "breakup": [
                     {
                         "description": "delivery_fee",
                         "displayText": "Delivery Fee",
-                        "valueInPaise": 5000,
+                        "valueInPaise": 50,
                         "breakupType": "DEFAULT"
                     }
                     ]

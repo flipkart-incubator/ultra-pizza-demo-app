@@ -6,7 +6,8 @@ var credentialStore = require('./CredentialStore.js');
  * 
  * Server API to initiate refund
  */
-export async function returnOrder(orderId) {
+export async function returnOrder(req) {
+    let amount = req.pizza*3 + req.beverage + req.sides*2;
     return fetch('https://platform.flipkart.net/3/payment/refund/create',
         {
             method: 'POST',
@@ -20,8 +21,8 @@ export async function returnOrder(orderId) {
                     "name": "playground",
                     "password": "a4df1221a8ba0ffcda1a2a43046a2b0bae2518f5881210bb1e2ea003fc0038fa"
                 },
-                "paymentMerchantTransactionId": orderId,
-                "refundAmountInPaise": 5000,
+                "paymentMerchantTransactionId": req.orderId,
+                "refundAmountInPaise": amount,
                 "refundMerchantTransactionId": "PLAYGROUND_" + Math.random().toString(36).slice(2).toUpperCase(),
                 "refundReason": "taking longer than expected",
                 "identityToken": credentialStore.getUser()
